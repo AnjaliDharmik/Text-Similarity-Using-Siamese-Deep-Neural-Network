@@ -44,7 +44,11 @@ Step by step Working:
 - Map output results with input dataset.
 
 Environment:
+
 Keras -> 2.1.6
+
 pandas -> 0.17.1
+
 gensim -> 3.1.0
+
 numpy -> 1.13.1
