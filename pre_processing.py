@@ -77,8 +77,8 @@ def create_test_data(tokenizer, test_questions_pair, max_sequence_length):
     test_questions1 = [x[0] for x in test_questions_pair]
     test_questions2 = [x[1] for x in test_questions_pair]
 
-    test_questions_1 = tokenizer.texts_to_questions(test_questions1)
-    test_questions_2 = tokenizer.texts_to_questions(test_questions2)
+    test_questions_1 = tokenizer.texts_to_sequences(test_questions1)
+    test_questions_2 = tokenizer.texts_to_sequences(test_questions2)
     leaks_test = [[len(set(x1)), len(set(x2)), len(set(x1).intersection(x2))]
                   for x1, x2 in zip(test_questions_1, test_questions_2)]
 
